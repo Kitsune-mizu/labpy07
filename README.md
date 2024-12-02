@@ -106,11 +106,13 @@
 
 **Nama Class: Mahasiswa**
 * Class Mahasiswa adalah entitas yang bertanggung jawab untuk mengelola data mahasiswa, seperti menambah, mengubah, menampilkan, dan menghapus data mahasiswa.
+
 **Atribut (Attributes)**
 * data: dict
      - Atribut ini menyimpan data mahasiswa dalam bentuk pasangan kunci-nilai.
          - Kunci (Key): Nama mahasiswa.
          - Nilai (Value): Nilai mahasiswa yang terhubung dengan nama tersebut.
+
 **Metode (Methods)**
 1.	**__init__():**
      * Merupakan constructor atau metode yang dipanggil ketika objek Mahasiswa pertama kali dibuat.
