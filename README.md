@@ -43,7 +43,7 @@
      * Input dari pengguna menentukan fungsi mana yang akan dijalankan.
      * Setelah selesai dengan suatu operasi, menu akan ditampilkan kembali hingga pengguna memilih opsi keluar.
 
-**Contoh Input & Output penggunaan**
+### Contoh Input & Output penggunaan
 1.	**Menambahkan Data**
 
      ![alt text](image-8.png)
