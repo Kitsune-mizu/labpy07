@@ -7,21 +7,33 @@
 
 **Penjelasan program:**
 1.	**Class Mahasiswa**
+
      ![alt text](image-2.png)
+
      * Fungsi utama: Mengelola data mahasiswa menggunakan dictionary.
          - Key: Nama mahasiswa.
          - Value: Nilai mahasiswa.
      * Method:
          - tambah(nama, nilai): Menambahkan mahasiswa baru ke dalam dictionary.
+
              ![alt text](image-3.png)
+
          - tampilkan(): Menampilkan seluruh data mahasiswa yang tersimpan.
+
              ![alt text](image-4.png)
+
          - hapus(nama): Menghapus data mahasiswa berdasarkan nama.
+
              ![alt text](image-5.png)
+
          - ubah(nama, nilai_baru): Mengubah nilai mahasiswa berdasarkan nama.
+
              ![alt text](image-6.png)
+
 2.	**Antarmuka Menu**
+
      ![alt text](image-7.png)
+
      * Program berjalan dalam loop, menampilkan menu pilihan berikut:
          - Tambah Data (1)
          - Tampilkan Data (2)
@@ -33,7 +45,9 @@
 
 **Contoh Input & Output penggunaan**
 1.	**Menambahkan Data**
+
      ![alt text](image-8.png)
+
      * Menu ini digunakan untuk menambahkan data mahasiswa.
      * Langkah-langkah:
          - Pilih menu dengan mengetik 1 lalu tekan Enter.
@@ -41,8 +55,10 @@
          - Masukkan Nilai Tugas (contoh: 80).
          - Data akan disimpan, dan pesan "Data berhasil ditambahkan." akan muncul.
 2.	**Tampilakan Data**
+
      ![alt text](image-9.png)
      ![alt text](image-10.png)
+
      * Menu ini digunakan untuk melihat semua data mahasiswa.
      * Langkah-langkah:
          - Pilih menu dengan mengetik 2, lalu tekan Enter.
@@ -50,8 +66,10 @@
              - Jika ada data, urutan berisi daftar nilai mahasiswa.
              - Jika tidak ada data, akan ditampilkan dengan pesan "Belum ada data mahasiswa".
 3.	**Ubah Data**
+
      ![alt text](image-11.png)
      ![alt text](image-12.png)
+
      * Menu ini digunakan untuk mengubah data nilai mahasiswa yang sudah ada.
      * Langkah-langkah:
          - Pilih menu dengan mengetik 3, lalu tekan Enter.
@@ -60,8 +78,10 @@
              - Jika data tidak ditemukan, pesan "Data (nama)tidak ditemukan." akan muncul.
          - Setelah data diperbarui, pesan "Data (nama) berhasil diubah." akan muncul.
 4.	**Hapus Data**
+
      ![alt text](image-13.png)
      ![alt text](image-14.png)
+
      * Menu ini digunakan untuk menghapus data mahasiswa berdasarkan nama.
      * Langkah-langkah:
          - Pilih menu dengan mengetik 4, lalu tekan Enter.
@@ -69,7 +89,9 @@
              - Jika data ditemukan, data akan dihapus, dan pesan "Data (nama) berhasil dihapus." akan muncul.
              - Jika data tidak ditemukan, pesan "Data (nama) tidak ditemukan." akan muncul.
 5.	**Keluar**
+
      ![alt text](image-15.png)
+
      * Menu ini digunakan untuk keluar dari program.
      * Langkah-langkah:
          - Pilih menu dengan mengetik 5, lalu tekan Enter.
@@ -77,6 +99,7 @@
 
 
 ### Diagram Class
+
 ![alt text](image-16.png)
 
 **Penjelasan:**
@@ -105,6 +128,7 @@
      * Jika nama mahasiswa ditemukan dalam dictionary, maka nilai mahasiswa tersebut akan diperbarui dengan nilai_baru.
 
 ### Flowchart 
+
 ![alt text](image-17.png)
  
 **Penjelasan flowchart:**
