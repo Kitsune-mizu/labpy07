@@ -1,7 +1,7 @@
 class Mahasiswa():
     def __init__(self):
         self.data = {}
-
+         
     def tambah(self, nama, nilai):
         self.data[nama] = nilai
         print(f"Data {nama} berhasil ditambahkan.")
@@ -12,7 +12,7 @@ class Mahasiswa():
         else:
             print("Daftar Nilai Mahasiswa:")
             for nama, nilai in self.data.items():
-                print(f"- nama: {nama} nilai: {nilai}")
+                print(f"- Nama: {nama}, Nilai: {nilai}")
 
     def hapus(self, nama):
         if nama in self.data:
@@ -28,25 +28,43 @@ class Mahasiswa():
         else:
             print(f"Data {nama} tidak ditemukan.")
 
-daftar = Mahasiswa()
-while True:
-    print("\n===== Menu =====")
-    print("1. Tambah Data")
-    print("2. Tampilkan Data")
-    print("3. Ubah Data")
-    print("4. Hapus Data")
-    print("5. Keluar")
-    menu = input("Pilih menu (1-5): ")
-    if menu == "1":
-        daftar.tambah(input("Nama: "), int(input("Nilai: ")))
-    elif menu == "2":
-        daftar.tampilkan()
-    elif menu == "3":
-        daftar.ubah(input("Nama: "), int(input("Nilai Baru: ")))
-    elif menu == "4":
-       daftar.hapus(input("Nama: "))
-    elif menu == "5":
-        print("Program selesai.")
-        break
-    else:
-        print("Pilihan tidak valid.")
+class Menu():
+    def __init__(self):
+        self.daftar = Mahasiswa()   
+
+    def tampilkan_menu(self):
+        print("\n===== Menu =====")
+        print("1. Tambah Data")
+        print("2. Tampilkan Data")
+        print("3. Hapus Data")
+        print("4. Ubah Data")
+        print("5. Keluar")
+
+    def proses_input(self, menu):
+        if menu == "1":
+            nama = input("Nama: ")
+            nilai = int(input("Nilai: "))
+            self.daftar.tambah(nama, nilai)
+        elif menu == "2":
+            self.daftar.tampilkan()
+        elif menu == "3":
+            nama = input("Nama: ")
+            self.daftar.hapus(nama)
+        elif menu == "4":
+            nama = input("Nama: ")
+            nilai_baru = int(input("Nilai Baru: "))
+            self.daftar.ubah(nama, nilai_baru)
+        elif menu == "5":
+            print("Program selesai.")
+            exit()
+        else:
+            print("Pilihan tidak valid.")
+
+    def jalankan(self):
+        while True:
+            self.tampilkan_menu()
+            menu = input("Pilih menu (1-5): ")
+            self.proses_input(menu)
+
+app = Menu()
+app.jalankan()
